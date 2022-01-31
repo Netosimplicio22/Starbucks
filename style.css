@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 140px;
+    padding: 0px 75px;
+}
+
+.menu-mobile a{
+    text-decoration: none;
+    font-size: 45px;
+    color: black;
+    display: none;
+}
+
+header nav #x-menu{
+    font-size: 55px;
+    text-decoration: none;
+    color: black;
+    display: none;
+}
+
+header nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-weight: 500;
+    font-size: 20px;
+    margin-right: 25px;
+    transition: 0.2s;
+}
+
+header nav a:hover{
+    color: #017143;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+main .first-contaneir{
+    margin: 70px 0px 0px 90px;
+    width: 600px;
+}
+
+main .first-contaneir .texto-sobre h1{
+    color: rgb(31, 31, 30);
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+main .first-contaneir .texto-sobre span{
+    color: #017143;
+    font-size: 60px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+}
+
+main .first-contaneir .texto-sobre p{
+    font-weight: 600;
+    color: rgb(56, 56, 55);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+main .first-contaneir .texto-sobre button{
+    border: 0;
+    background-color: #017143;
+    color: white;
+    border-radius: 20px;
+    width: 150px;
+    height: 35px;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+main .first-contaneir .texto-sobre button:hover{
+    background-color: #0c965c;
+}
+
+main .segund-contaneir{
+    position: relative;
+}
+
+main .segund-contaneir .extras{
+    background-color: #017143;
+    position: absolute;
+    width: 900px;
+    height: 850px;
+    right: -350px;
+    top: 0;
+    border-radius: 50%;
+}
+
+main .segund-contaneir .extras .foto img{
+    position: absolute;
+    top: -40px;
+    width: 320px;
+}
+
+main .segund-contaneir .extras .medias-sociais{
+    position: absolute;
+    display: block;
+    right: 360px;
+    top: 140px;
+}
+
+main .segund-contaneir .extras .medias-sociais img{
+    margin-bottom: 30px;
+}
+
+@media (max-width:1245px) {
+
+    header{
+        height: 90px;
+    }
+
+    header .logo img{
+        width: 83px;
+        height: 83px;
+    }
+
+    main{
+        background-color: #017143;
+        width: 100vw;
+        height: 100vh;
+        padding-top: 80px;
+    }
+
+    main .first-contaneir .texto-sobre h1{
+        color: white;
+    }
+
+    main .first-contaneir .texto-sobre p{
+        color: white;
+    }
+
+    main .first-contaneir .texto-sobre span{
+        color: rgb(31, 31, 30);
+    }
+
+    main .first-contaneir .texto-sobre button{
+        background-color: white;
+        color: #017143;
+    }
+
+    main .first-contaneir .texto-sobre button:hover{
+        background-color: rgb(238, 234, 234);
+    }
+
+    main .segund-contaneir .extras{
+        width: 0px;
+        height: 0px;
+    }
+    
+    main .segund-contaneir .extras .foto img{
+        width: 300px;
+        top: 20px;
+        right: 400px;
+    }
+}
+
+@media (max-width:1030px) {
+   
+    main{
+        display: flex;
+        justify-content: center;
+    }
+   
+    main .segund-contaneir{
+        display: none;
+    }
+}
+
+@media (max-width:810px) {
+
+    header nav .menu{
+        height: 100vh;
+        background-color: white;
+        width: 0px;
+        top: 0;
+        right: 0;
+        position: fixed;
+        z-index: 2;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    header nav #x-menu{
+        position: absolute;
+        display: block;
+        margin-top: 10px;
+        border: 0;
+        left: 150px;
+    }
+
+    header nav #x-menu:hover{
+        background-color: white;
+        color: #017143;
+    }
+
+    header nav .menu a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 120px;
+        border-top: 2px solid #017143;
+        border-bottom: 2px solid #017143;
+        width: 100%;
+    }
+
+    header nav .menu a:hover{
+        background-color: #017143;
+        color: white;
+    }
+
+    header nav .menu-mobile a{
+        display: block;
+    }
+}
+
+@media (max-width:700px) {
+
+    main .first-contaneir .texto-sobre p{
+        display: none;
+    }
+    
+}
